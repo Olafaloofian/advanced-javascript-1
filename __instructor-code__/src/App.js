@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AsyncAwait from './AsyncAwait';
 
 // class MyError extends Error {
 //   constructor(message) {
@@ -46,14 +47,15 @@ class App extends Component {
     return (
       <div>
         <h1>Advanced JavaScript</h1>
-        <div>
+        {/* <div>
           <div>JSON: <textarea value={jsonString} cols="50" rows="5" onChange={e => this.setState({ jsonString: e.target.value })} /></div>
           <div>
             Field to grab: <input value={fieldToGrab} onChange={e => this.setState({ fieldToGrab: e.target.value })} />
             <button onClick={this.getFieldValueFromJSON}>Get field value</button>
           </div>
         </div>
-        <div>{message}</div>
+        <div>{message}</div> */}
+        <AsyncAwait />
       </div>
     );
   }

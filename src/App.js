@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import AsyncAwait from './AsyncAwait'
 
 class MyError extends Error {
   constructor(error) {
@@ -48,6 +49,7 @@ class App extends Component {
           </div>
         </div>
         <div>{message}</div>
+        <AsyncAwait />
       </div>
     );
   }
